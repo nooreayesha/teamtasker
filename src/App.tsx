@@ -1,6 +1,4 @@
-
-import React, { useContext } from "react";
-import { AuthProvider, AuthContext } from "./contexts/AuthContext";
+import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Dashboard from "./pages/Dashboard";
 import SignIn from "./pages/SignIn";
@@ -16,6 +14,6 @@ export default function App() {
 }
 
 function Main() {
-  const { user } = useContext(AuthContext);
+  const { user } = useAuth();
   return user ? <Dashboard /> : <SignIn />;
 }
