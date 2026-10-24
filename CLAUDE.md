@@ -23,10 +23,11 @@ e2e/               Playwright tests
 
 Run from the repo root (they fan out to the workspaces):
 
-- `npm run dev` start web + API
+- `npm run dev` start the web app
 - `npm run typecheck`, `npm run lint`, `npm test`, `npm run build`
 - `npm run format` / `npm run format:check`
 - `npm run <script> --workspace @teamtasker/web` (or `/api`, `/shared`) runs a script in one package
+- API: `npm run dev --workspace @teamtasker/api` (port 3000); DB scripts in `apps/api`: `db:migrate`, `db:seed`, `db:studio`
 - Database: `DATABASE_URL` in `apps/api/.env` points at a Neon Postgres (use a separate Neon branch/database for tests)
 
 Before committing, `typecheck`, `lint` and `test` must pass.

@@ -55,7 +55,7 @@ apps/
   web/          React app (Vite, Tailwind)
     src/contexts/   AuthContext (demo session) and ThemeContext (light/dark)
     src/pages/      SignIn and Dashboard screens
-  api/          Backend (in progress, see PLAN.md)
+  api/          Fastify + Prisma + PostgreSQL backend (in progress, see PLAN.md)
 packages/
   shared/       Shared types and schemas (in progress)
 ```

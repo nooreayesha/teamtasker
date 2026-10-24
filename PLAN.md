@@ -17,7 +17,7 @@ Task >──< Label        ActivityLog(workspace, actor, action, entity, created
 ## Phase 1: Foundation
 
 - [x] **1. Monorepo setup (S).** Convert to npm workspaces: move current app to `apps/web`, add empty `apps/api` and `packages/shared`, root scripts fan out. _Done when:_ existing 12 tests, lint, typecheck and build still pass from the root and CI is green.
-- [ ] **2. Database and API skeleton (O).** Neon Postgres connection (`DATABASE_URL`), Prisma schema for the model above, first migration, seed script, Fastify app with `GET /health`, env validation with Zod, `.env.example`. _Done when:_ migrate, seed and `GET /health` all work against Neon, and a test hits `/health`.
+- [x] **2. Database and API skeleton (O).** Neon Postgres connection (`DATABASE_URL`), Prisma schema for the model above, first migration, seed script, Fastify app with `GET /health`, env validation with Zod, `.env.example`. _Done when:_ migrate, seed and `GET /health` all work against Neon, and a test hits `/health`.
 
 ## Phase 2: Auth
 
