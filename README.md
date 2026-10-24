@@ -51,12 +51,13 @@ npm run dev      # start the dev server
 ## Project structure
 
 ```
-src/
-  contexts/     AuthContext (demo session) and ThemeContext (light/dark)
-  pages/        SignIn and Dashboard screens
-  test/         Test setup
-  App.tsx       Chooses the screen based on sign-in state
-  main.tsx      Entry point
+apps/
+  web/          React app (Vite, Tailwind)
+    src/contexts/   AuthContext (demo session) and ThemeContext (light/dark)
+    src/pages/      SignIn and Dashboard screens
+  api/          Backend (in progress, see PLAN.md)
+packages/
+  shared/       Shared types and schemas (in progress)
 ```
 
 ## Roadmap
